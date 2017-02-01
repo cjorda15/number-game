@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Number Game!</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <footer>
+      <div>
+        <h1><span>Number </span>Guesser</h1>
+     </div>
+    </footer>
+    <main>
+      <form action="post">
+        <input id="guess-form" type="text" placeholder="Enter Your Guess"/><br/>
+        <input id="guess-button" type="button" value="Guess"/>
+        <input id="clear-button" type="button" value="Clear"/>
+      </form>
+      <section>
+        <h4 id="guess-text">
+        Enter a Guess between <span id="min">1</span> and <span id="max">100</span>
+      </h4>
+       <h2 id="number">
+         #
+       </h2>
+       <h4 id="answer">
+         Feel free to enter a guess anytime....
+       </h4>
+    </section>
+      <input onClick="window.location.href=window.location.href" id="reset" type="button" value="Reset"/>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
