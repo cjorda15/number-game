@@ -5,12 +5,11 @@ var guessText = document.querySelector("#guess-text");
 var answer = document.querySelector("#number");
 var response = document.querySelector("#answer");
 var reset = document.querySelector("#reset");
+
 var evalNumber;
 var min= 0;
 var max= 100;
-var player1=0;
-var player2=0;
-var counter= 0;
+
 function rando(a, b) {
     return Math.floor(Math.random() * (a - b) + b);
 }
@@ -39,14 +38,6 @@ guessButton.addEventListener('click', function(){
       if(evalNumber===undefined){
       evalNumber=rando(min,max);
       console.log(evalNumber)
-      }
-      counter++;
-      if(counter%2===0){
-        alert("Player 1's turn")
-
-      }
-      else{
-       alert("Player 2's turn")
       }
     if(guessForm.value===undefined){
       clearButton.className='dis';
@@ -101,16 +92,6 @@ answer.innerText= "#"
 response.innerText="Feel free to enter a guess anytime..."
 guessForm.value=null;
 evalNumber=rando(min,max);
-//alert(evalNumber);
+alert(evalNumber);
 guessButton.classList.remove("dis");
-if(counter%2===0){
-  player1++;
-  alert("Player 1 wins! SCOREBOARD   Player 1 : "+ player1+"  Player 2 : "+player2)
-
-}
-else{
-  player2++
- alert("Player 2 wins! SCOREBOARD   Player 1 : "+ player1+"  Player 2 : "+player2)
-}
-counter=0;
 })

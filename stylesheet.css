@@ -8,6 +8,10 @@
   font-weight: 200;
 }
 
+body{
+  margin:0px;
+}
+
 footer {
   width: 100%;
   background-color: #404041;
@@ -64,7 +68,7 @@ h1{
   margin: 0px auto;
   border-radius: 0px;
   background-color: white;
-  color: lightgrey;
+  color: #e02881;
   padding: 5px;
   outline: 0px;}
 
@@ -81,7 +85,6 @@ h1{
   margin: 5px;
   position: relative;
   top: 75px;
-
 }
 
  #guess-form{
@@ -108,6 +111,7 @@ h1{
  #clear-button{
    margin-bottom: 10px;
  }
+
  #number{
   position: relative;
   top: 40px;
@@ -122,9 +126,15 @@ h1{
   background-color:#D0D2D3
 }
 
-
 @media (min-width:550px){
   #guess-button, #clear-button{
     width:140px;
+  }
+}
+
+@media (max-height:590px) {
+  #reset{
+    position: relative;
+    top:-5px;
   }
 }
