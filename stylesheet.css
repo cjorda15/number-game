@@ -2,32 +2,30 @@
 
 * {
   font-family: "Open Sans",sans-serif;
-  text-align: center;
-  align-items: center;
-  align-content: center;
   font-weight: 200;
+
   }
 
 body{
   margin:0px;
+  text-align: center;
+
   }
 
-footer {
+header {
   width: 100%;
   background-color: #404041;
   margin-top: 0px;
   padding: 25px;
   color: #E6E7E8;
   margin-bottom: 20px;
-  text-align: center;
   height: 50px;
-  position: relative;
-  top: -10px;
   }
 
 h1{
   position: relative;
   top: 5px;
+  left:-20px;
   margin: 0px auto;
   width: 400px;
   font-size: 35px;
@@ -59,10 +57,6 @@ input:hover{
   background-color: #EB008B;
   }
 
-h1{
-  text-align: center;
-  align-items: center;
-  }
 #guess-form{
   font-size: 20px;
   width: 255px;
