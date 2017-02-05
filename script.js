@@ -1,4 +1,4 @@
-evar guessButton = document.querySelector("#guess-button");
+var guessButton = document.querySelector("#guess-button");
 var guessForm = document.querySelector("#guess-form");
 var clearButton = document.querySelector("#clear-button");
 var guessText = document.querySelector("#guess-text");
@@ -96,7 +96,7 @@ reset.addEventListener('click',function(){
   max+=10;
   clearButton.className='dis';
   reset.className='dis';
-guessText.innerHTML="<p>Enter a guess now between "+min+" and "+ max +"</p>";
+guessText.innerHTML="<h1>Enter a guess now between "+min+" and "+ max +"</h2>";
 answer.innerText= "#"
 response.innerText="Feel free to enter a guess anytime..."
 guessForm.value=null;
